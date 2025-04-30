@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamara's Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+ 
+    <header>
+        <h1>Welcome To My LALA Land</h1>
+        <p>Watch Me Take My First Step Towards Creating Magical User Experiences!</p>
+    </header>
+    <br><br>
+     
+    <section id="fun">
+        <h2>Get Ready To Be Amazed</h2>
+        <button id="Tbutton">Click Or Double-click Me!</button>
+        <div class="animate__animated animate__tada" id="hoverText">Come closer!</div>
+        <p id="keypressDisplay">Press any key to see magic...</p>
+        <div id="doubleClick">Double-click me for a special Message</div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/I1.png" alt="Gallery Image 1">
+            <img src="images/I2.png" alt="Gallery Image 2">
+            <img src="images/I3.png" alt="Gallery Image 3">
+            <img src="images/I4.png" alt="Gallery Image 4">
+            <img src="images/I5.png" alt="Gallery Image 5">
+        </div>
+    </section>
+ 
+    <section id="tabs">
+        <h2>Try them Out</h2>
+        <div class="tabs">
+            <button class="tab-button" data-tab="about">About</button>
+            <button class="tab-button" data-tab="projects">Projects</button>
+            <button class="tab-button" data-tab="contact">Contact</button>
+        </div>
+        <div class="tab-content" id="about">Welcome to my site!</div>
+        <div class="tab-content" id="projects" style="display: none;">Here are my works.</div>
+        <div class="tab-content" id="contact" style="display: none;">Get in touch with me!</div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section id="form-validation">
+        <h2>Introductory Form</h2>
+        <form id="friendForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="8" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formFeedback"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
